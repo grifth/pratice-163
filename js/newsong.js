@@ -1,8 +1,8 @@
 {
-  let view = {
+  let view  = {
     el:'.newSong',
     template:'新建歌曲',
-    render(){
+    render(data){
       $(this.el).html(this.template)
     }
   }
@@ -14,13 +14,12 @@
       this.view = view
       this.model = model
       this.view.render()
-      window.eventHub.on('upload',()=>{
-        this.active()
+
+      $(this.view.el).on('click',()=>{
+        window.eventHub.emit('upload',{name:'',singer:'',link:'',id:''})
       })
-    },
-    active(){
-      $(this.view.el).addClass('active')
     }
+
   }
   controller.init(view,model)
 }
