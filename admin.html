@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>管理页面</title>
+  <link rel="stylesheet" href="./src/css/default.css">
+</head>
+<body>
+
+  <div class="page">
+    <aside>
+      <div class="newSong">
+      </div>
+      <div id="songList-container">
+
+      </div>
+
+      <div class="uploadArea" id="uploadArea">
+        <div id="uploadContainer" class="draggable">
+          <div id="uploadButton" class="clickable">
+            <p>点击或拖曳文件</p>
+            <p>文件大小不能超过 40MB </p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <main>
+
+    </main>
+  </div>
+  <script type="text/javascript" src="./src/js/admin/av-min.js"> </script>
+  <script type="text/javascript" src="./src/js/admin/realtime.browser.min.js"> </script>
+  <script type="text/javascript" src="./src/js/initializers/av.js"> </script>
+  <script type="text/javascript" src=".\node_modules\jquery\dist\jquery.min.js"> </script>
+  <script src="./vendors/moxie.js"></script>
+  <script src="../node_modules/plupload/js/plupload.min.js"></script>
+  <script src="../node_modules/qiniu-js/dist/qiniu.min.js"></script>
+  <script type="text/javascript" src="./src/js/admin/eventHub.js"> </script>
+  <script type="text/javascript" src="./src/js/admin/upload.js"> </script>
+  <script type="text/javascript" src="./src/js/admin/songform.js"> </script>
+  <script type="text/javascript" src="./src/js/admin/songlist.js"> </script>
+  <script type="text/javascript" src="./src/js/admin/newsong.js"> </script>
+</body>
+</html>
